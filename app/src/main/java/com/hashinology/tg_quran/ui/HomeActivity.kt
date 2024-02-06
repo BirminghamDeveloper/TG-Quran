@@ -1,4 +1,4 @@
-package com.hashinology.tg_quran
+package com.hashinology.tg_quran.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

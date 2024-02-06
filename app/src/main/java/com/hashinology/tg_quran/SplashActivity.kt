@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.hashinology.tg_quran.databinding.ActivitySplashBinding
+import com.hashinology.tg_quran.ui.HomeActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var viewBinding : ActivitySplashBinding

@@ -3,7 +3,13 @@
     <style name="Base.Theme.TGQuran" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/M.Green</item>
+        <item name="android:statusBarColor">@color/M.Green</item>
     </style>
 
     <style name="Theme.TGQuran" parent="Base.Theme.TGQuran" />
+
+    <style name="bottomNavigationStyle" parent="ShapeAppearance.Material3.NavigationBarView.ActiveIndicator">
+
+    </style>
 </resources>
