@@ -2,14 +2,15 @@ package com.hashinology.tg_quran.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.hashinology.tg_quran.databinding.ActivityMainBinding
+import com.hashinology.tg_quran.databinding.ActivityHomeBinding
+
 
 class HomeActivity : AppCompatActivity() {
-    lateinit var viewBinding: ActivityMainBinding
+    lateinit var viewBinding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewBinding = ActivityMainBinding.inflate(layoutInflater)
+        viewBinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
 
         initViews()

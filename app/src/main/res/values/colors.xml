@@ -5,4 +5,5 @@
     <color name="M.Green">#09983B</color>
     <color name="D.Green">#055B23</color>
     <color name="M.Brown">#983B09</color>
+    <color name="transparent">#00000000</color>
 </resources>
