@@ -23,8 +23,8 @@ class SurahDetailsActivity : AppCompatActivity() {
 
     private fun initViews() {
         adapter = SuraDetailsAdapter(null)
-        viewBinding.rvSurah.adapter = adapter
         readDataFromFile()
+        viewBinding.rvSurah.adapter = adapter
     }
 
     //i return sura numb + name
