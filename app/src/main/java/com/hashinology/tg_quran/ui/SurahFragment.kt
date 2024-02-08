@@ -7,14 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.hashinology.tg_quran.OnItemClick
-import com.hashinology.tg_quran.adapter.SurahAdapter
 import com.hashinology.tg_quran.constants.SurahData
 import com.hashinology.tg_quran.constants.SurahNames
 import com.hashinology.tg_quran.databinding.FragmentSurahBinding
 
 class SurahFragment : Fragment() {
     lateinit var viewBinding: FragmentSurahBinding
-    lateinit var surahAdapter: SurahAdapter
+    lateinit var surahAdapter: SurahDetailsAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,7 +29,7 @@ class SurahFragment : Fragment() {
     }
 
     private fun initViews() {
-        surahAdapter = SurahAdapter(SurahNames.ArSuras.mapIndexed { position, name ->
+        surahAdapter = SurahDetailsAdapter(SurahNames.ArSuras.mapIndexed { position, name ->
             SurahData(name, position + 1)
         })
         /* val list = SurahAdapter(SurahNames.ArSuras.mapIndexed{ position, name ->
