@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.hashinology.tg_quran.OnItemClick
 import com.hashinology.tg_quran.constants.SurahData
-import com.hashinology.tg_quran.constants.SurahNames
 import com.hashinology.tg_quran.databinding.SurahListItemBinding
 
 class SurahAdapter(

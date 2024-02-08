@@ -1,16 +1,16 @@
-package com.hashinology.tg_quran.ui
-
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.hashinology.tg_quran.OnItemClick
+import com.hashinology.tg_quran.adapter.SuraDetailsAdapter
 import com.hashinology.tg_quran.adapter.SurahAdapter
 import com.hashinology.tg_quran.constants.SurahData
 import com.hashinology.tg_quran.constants.SurahNames
 import com.hashinology.tg_quran.databinding.FragmentSurahBinding
+import com.hashinology.tg_quran.ui.SurahDetailsActivity
 
 class SurahFragment : Fragment() {
     lateinit var viewBinding: FragmentSurahBinding
