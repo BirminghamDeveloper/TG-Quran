@@ -1,5 +1,6 @@
 package com.hashinology.tg_quran.ui
 
+import SurahFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment

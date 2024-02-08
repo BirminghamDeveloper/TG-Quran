@@ -1,5 +1,6 @@
 package com.hashinology.tg_quran.ui
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,9 +23,12 @@ class SurahDetailsActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        suraName = intent.getStringExtra("sura_name")
+        suraPosition = intent.getIntExtra("sura_number", 1)
         adapter = SuraDetailsAdapter(null)
         readDataFromFile()
         viewBinding.rvSurah.adapter = adapter
+        viewBinding.tvTitle.text = suraName
     }
 
     //i return sura numb + name

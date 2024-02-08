@@ -8,7 +8,6 @@
     android:textSize="30sp"
     android:textStyle="bold"
     android:fontFamily="@font/quraan"
-    android:textAlignment="center"
     android:text="بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
 الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
  الرَّحْمَنِ الرَّحِيمِ

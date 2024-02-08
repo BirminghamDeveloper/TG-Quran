@@ -31,7 +31,7 @@ class SurahFragment : Fragment() {
 
     private fun initViews() {
         surahAdapter = SurahAdapter(SurahNames.ArSuras.mapIndexed { position, name ->
-            SurahData(name, position + 1)
+            SurahData(name, position+1)
         })
         /* val list = SurahAdapter(SurahNames.ArSuras.mapIndexed{ position, name ->
              SurahData(name,position +1)
@@ -41,8 +41,8 @@ class SurahFragment : Fragment() {
         surahAdapter.onItemClick = object : OnItemClick {
             override fun onItemClickListner(surahData: SurahData) {
                 val intent = Intent(requireActivity(), SurahDetailsActivity::class.java)
-                intent.putExtra("sura_name", surahData)
-                intent.putExtra("sura_number", surahData)
+                intent.putExtra("sura_name", surahData.surahName)
+                intent.putExtra("sura_number", surahData.surahNumber)
                 startActivity(intent)
             }
         }
