@@ -12,4 +12,13 @@
     <style name="bottomNavigationStyle" parent="ShapeAppearance.Material3.NavigationBarView.ActiveIndicator">
 
     </style>
+    <style name="textview" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/bg_shape_hadeeth</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/quraan</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

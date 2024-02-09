@@ -1,17 +1,16 @@
 package com.hashinology.tg_quran.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hashinology.tg_quran.OnItemClick
+import com.hashinology.tg_quran.OnItemClickQuran
 import com.hashinology.tg_quran.constants.SurahData
 import com.hashinology.tg_quran.databinding.SurahListItemBinding
 
 class SurahAdapter(
     val list: List<SurahData>
 ) : RecyclerView.Adapter<SurahAdapter.ViewHolders>() {
-    var onItemClick: OnItemClick? = null
+    var onItemClick: OnItemClickQuran? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SurahAdapter.ViewHolders {
         val view = SurahListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)

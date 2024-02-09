@@ -4,8 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.hashinology.tg_quran.OnItemClick
-import com.hashinology.tg_quran.adapter.SuraDetailsAdapter
+import com.hashinology.tg_quran.OnItemClickQuran
 import com.hashinology.tg_quran.adapter.SurahAdapter
 import com.hashinology.tg_quran.constants.SurahData
 import com.hashinology.tg_quran.constants.SurahNames
@@ -38,7 +37,7 @@ class SurahFragment : Fragment() {
          })
          Log.d("TAG", list.toString())*/
         viewBinding.rvSurahList.adapter = surahAdapter
-        surahAdapter.onItemClick = object : OnItemClick {
+        surahAdapter.onItemClick = object : OnItemClickQuran {
             override fun onItemClickListner(surahData: SurahData) {
                 val intent = Intent(requireActivity(), SurahDetailsActivity::class.java)
                 intent.putExtra("sura_name", surahData.surahName)
