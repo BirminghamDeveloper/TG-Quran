@@ -1,4 +1,4 @@
-package com.hashinology.tg_quran.fragments
+package com.hashinology.tg_quran.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
