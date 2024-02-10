@@ -1,4 +1,4 @@
-package com.hashinology.tg_quran.ui
+package com.hashinology.tg_quran.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hashinology.tg_quran.HadethContantActivity
 import com.hashinology.tg_quran.OnItemClickHadeeth
-import com.hashinology.tg_quran.R
 import com.hashinology.tg_quran.adapter.HadeethAdapter
 import com.hashinology.tg_quran.constants.DataClassHadeth
 import com.hashinology.tg_quran.constants.hadeethListTitle

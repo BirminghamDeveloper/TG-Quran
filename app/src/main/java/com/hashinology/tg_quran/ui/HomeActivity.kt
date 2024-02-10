@@ -1,11 +1,14 @@
 package com.hashinology.tg_quran.ui
 
-import SurahFragment
+import com.hashinology.tg_quran.fragments.SurahFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.hashinology.tg_quran.R
 import com.hashinology.tg_quran.databinding.ActivityHomeBinding
+import com.hashinology.tg_quran.fragments.HadieethFragment
+import com.hashinology.tg_quran.fragments.RadioFragment
+import com.hashinology.tg_quran.fragments.TasbeehFragment
 
 
 class HomeActivity : AppCompatActivity() {
