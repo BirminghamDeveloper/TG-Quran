@@ -34,21 +34,21 @@ class HadieethFragment : Fragment(), OnItemClickHadeeth
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setUpRV()
-        readfile()
+//        readfile()
 
     }
 
     private fun setUpRV() {
-        hadeethAdapter = HadeethAdapter(hadeethListTitle)
+        hadeethAdapter = HadeethAdapter(hadeethListTitle, this)
         viewBinding.rvHadeeth.apply {
             adapter = hadeethAdapter
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         }
     }
     var allAhadeth = ArrayList<DataClassHadeth>()
-    fun readfile() {
+    fun readfile(position: Int) {
 
-        var fileName = "ahadeth.txt"
+        var fileName = "h${position +1}.txt"
         var filcontant = activity?.assets?.open(fileName)?.bufferedReader().use {
             it?.readText()
         }
@@ -63,16 +63,16 @@ class HadieethFragment : Fragment(), OnItemClickHadeeth
             Log.e("content", content)
             val hadeth = DataClassHadeth(title, content)
             allAhadeth.add(hadeth)
-
         }
     }
 
     override fun onItemClickHadeeth(position: Int, title: String) {
+        readfile(position)
         var Intent = Intent(activity, HadethContantActivity::class.java)
-
         Intent.putExtra("hadeeth_position",position)
         Intent.putExtra("hadeeth_title", title)
 
         startActivity(Intent)
+//        activity?.finish()
     }
 }

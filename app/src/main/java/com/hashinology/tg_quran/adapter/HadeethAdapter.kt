@@ -10,10 +10,11 @@ import com.hashinology.tg_quran.databinding.FragmentHadieethBinding
 import com.hashinology.tg_quran.databinding.ItemRecylerviewNameHadethBinding
 
 class HadeethAdapter(
-    val list: List<String>
+    val list: List<String>,
+    var onItemClickHadeeth: OnItemClickHadeeth
 ): RecyclerView.Adapter<HadeethAdapter.ViewsHolders>() {
 //    lateinit var viewBinding : ItemRecylerviewNameHadethBinding
-    var onItemClickHadeeth: OnItemClickHadeeth? = null
+
 
     class ViewsHolders(val viewBinding: ItemRecylerviewNameHadethBinding): RecyclerView.ViewHolder(viewBinding.root)
 
