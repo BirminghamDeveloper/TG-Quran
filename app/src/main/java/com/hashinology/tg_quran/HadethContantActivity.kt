@@ -3,6 +3,8 @@ package com.hashinology.tg_quran
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import com.hashinology.tg_quran.constants.DataClassHadeth
 import com.hashinology.tg_quran.constants.hadeethListTitle
 import com.hashinology.tg_quran.databinding.ActivityHadethContantBinding
@@ -20,7 +22,22 @@ class HadethContantActivity : AppCompatActivity() {
         readfile(hadeethNumber +1)
 
         viewBinding.back.setOnClickListener {
-            onBackPressed()
+//            onBackPressed()
+            onBackPressedDispatcher.addCallback(this /* lifecycle owner */, object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    // Back is pressed... Finishing the activity
+                    finish()
+                }
+            })
+
+// ====================================================
+            /* Or for lambda simplicity: */
+// ====================================================
+            onBackPressedDispatcher.addCallback(this /* lifecycle owner */) {
+                // Back is pressed... Finishing the activity
+                finish()
+            }
+
         }
     }
 
