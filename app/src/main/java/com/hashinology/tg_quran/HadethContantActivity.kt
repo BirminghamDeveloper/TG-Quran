@@ -22,8 +22,8 @@ class HadethContantActivity : AppCompatActivity() {
         readfile(hadeethNumber +1)
 
         viewBinding.back.setOnClickListener {
-//            onBackPressed()
-            onBackPressedDispatcher.addCallback(this /* lifecycle owner */, object : OnBackPressedCallback(true) {
+            onBackPressed()
+/*            onBackPressedDispatcher.addCallback(this *//* lifecycle owner *//*, object : OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
                     // Back is pressed... Finishing the activity
                     finish()
@@ -31,12 +31,12 @@ class HadethContantActivity : AppCompatActivity() {
             })
 
 // ====================================================
-            /* Or for lambda simplicity: */
+            *//* Or for lambda simplicity: *//*
 // ====================================================
-            onBackPressedDispatcher.addCallback(this /* lifecycle owner */) {
+            onBackPressedDispatcher.addCallback(this *//* lifecycle owner *//*) {
                 // Back is pressed... Finishing the activity
                 finish()
-            }
+            }*/
 
         }
     }
