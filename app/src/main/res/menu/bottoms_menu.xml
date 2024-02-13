@@ -12,7 +12,7 @@
         android:icon="@drawable/islamic"
         >
     </item>
-    <item android:title="Tasbeeh"
+    <item android:title="Prayer Time"
         android:id="@+id/Tasbeh_Frag"
         android:icon="@drawable/beads"
         >

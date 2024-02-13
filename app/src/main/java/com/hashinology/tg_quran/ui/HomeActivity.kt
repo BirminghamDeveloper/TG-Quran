@@ -8,7 +8,7 @@ import com.hashinology.tg_quran.R
 import com.hashinology.tg_quran.databinding.ActivityHomeBinding
 import com.hashinology.tg_quran.ui.fragments.HadieethFragment
 import com.hashinology.tg_quran.ui.fragments.RadioFragment
-import com.hashinology.tg_quran.ui.fragments.TasbeehFragment
+import com.hashinology.tg_quran.ui.fragments.PrayerTimeFragment
 
 
 class HomeActivity : AppCompatActivity() {
@@ -34,7 +34,7 @@ class HomeActivity : AppCompatActivity() {
             } else if (it.itemId == R.id.Hadeeth_Frag) {
                 navigateTo(HadieethFragment())
             } else if (it.itemId == R.id.Tasbeh_Frag) {
-                navigateTo(TasbeehFragment())
+                navigateTo(PrayerTimeFragment())
             } else if (it.itemId == R.id.Radio_Frag) {
                 navigateTo(RadioFragment())
             }
